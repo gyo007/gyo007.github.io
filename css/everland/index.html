@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>에버랜드</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+$(function(){
+	
+	$(".dp1,.gnb_bg").hide();
+	$("#gnb>li").mouseover(function(){
+	$(".dp1,.gnb_bg").stop().slideDown();
+	});
+	$("#gnb>li").mouseout(function(){
+	$(".dp1,.gnb_bg").stop().slideUp();
+	});
+	
+	
+	
+	$(".dp2,.gnb_bg").hide();
+	$("#gnb>li").mouseover(function(){
+	$(".dp2,.gnb_bg").stop().slideDown();
+	});
+	$("#gnb>li").mouseout(function(){
+	$(".dp2,.gnb_bg").stop().slideUp();
+	});
+	
+	
+	
+	$(".dp3,.gnb_bg").hide();
+	$("#gnb>li").mouseover(function(){
+	$(".dp3,.gnb_bg").stop().slideDown();
+	});
+	$("#gnb>li").mouseout(function(){
+	$(".dp3,.gnb_bg").stop().slideUp();
+	});
+	
+	
+	
+	
+	$(".dp4,.gnb_bg").hide();
+	$("#gnb>li").mouseover(function(){
+	$(".dp4,.gnb_bg").stop().slideDown();
+	});
+	$("#gnb>li").mouseout(function(){
+	$(".dp4,.gnb_bg").stop().slideUp();
+	});
+	
+	
+	
+	$(".dp5,.gnb_bg").hide();
+	$("#gnb>li").mouseover(function(){
+	$(".dp5,.gnb_bg").stop().slideDown();
+	});
+	$("#gnb>li").mouseout(function(){
+	$(".dp5,.gnb_bg").stop().slideUp();
+	});
+	
+	
+	var slider = $('.main_banner').bxSlider({
+			auto: true, mode:'fade',
+		});
+
+		// 클릭시 멈춤 현상 해결 //
+		$(document).on('click','.bx-next, .bx-prev',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		});
+		$(document).on('mouseover','.bx-pager, #bx-pager1',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		});	
+
+});
+</script>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="js/jquery.bxslider.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<div id="header"><!--header-->
+    <div class="header_inner">
+        <ul class="reservation">
+        <li><a href="#">스마트 예약</a></li> 
+        <li><a href="#">학생단체 예약</a></li> 
+        <li><a href="#">기업단체 예약</a></li>
+        </ul>
+        
+        <ul class="util">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">English</a></li>
+        </ul>
+    </div>
+
+	<div class="gnb_inner">
+		<h1><a href="#"><img src="images/everlogo.jpg" alt="everland"></a></h1>
+
+        <ul id="gnb">
+        <li><a href="#">이용정보</a>
+             <ul class="dp1">
+                    <li><a href="#">운영시간 안내</a></li>
+                    <li><a href="#">어트렉션 정보</a></li>
+                    <li><a href="#">지도보기</a></li>
+                </ul>
+            </li>
+                
+        <li><a href="#">할인&amp;이벤트</a>
+             <ul class="dp2">
+                    <li><a href="#">오늘의 할인</a></li>
+                    <li><a href="#">오늘의 이벤트</a></li>
+                    <li><a href="#">당첨확인</a></li>
+                </ul>
+            </li>
+                
+        <li><a href="#">즐길거리</a>
+            <ul class="dp3">
+                    <li><a href="#">스낵바</a></li>
+                    <li><a href="#">불꽃놀이</a></li>
+                     <li><a href="#">스카이크루즈 안내</a></li>
+                </ul>
+            </li>
+           
+        <li><a href="#">멤버십</a>
+            <ul class="dp4">
+                    <li><a href="#">멤버십 카드</a></li>
+                    <li><a href="#">멤버십 등록</a></li>
+                    <li><a href="#">멤버십 할인이벤트</a></li>
+                </ul>
+            </li>
+                
+        <li><a href="#">더 알아보기</a>
+            <ul class="dp5">
+                <li><a href="#">캐리비안 베이</a></li>
+                <li><a href="#">홈브리지</a></li>
+                <li><a href="#">고객상담센터</a></li>
+            </ul>
+         </li>
+		</ul>
+    </div>
+
+	<div class="gnb_bg"><div class="in">
+    </div></div>
+    
+</div><!--//div-->
+
+
+
+
+<div id="visual">
+    <ul class="main_banner">
+        <li class="tree"><a href="#">에버나무</a></li>
+        <li class="festival"><a href="#">페스티발</a></li> 
+        <li class="water"><a href="#">캐비</a></li>     
+    </ul>
+</div><!--//visual-->
+
+
+
+
+<div id="whats_new">
+	<h2>What's new</h2>
+	<p>꿈과 환상의 나라로 어서 오세요!</p>
+    
+    <ul>
+    <li class="whapic1"><a href="#">
+    	<dl>
+        <dt><img src="images/rollercoster.png" alt="롤러코스터"></dt>
+	    <dd>부러우면 너도 와~<br>#난 오늘 T 두번 탄다</dd>
+        </dl>
+        </a></li>
+    
+    <li class="whapic2"><a href="#">
+    	<dl>
+        <dt><img src="images/butterfly1.png" alt="나비정원"></dt>
+	    <dd>Butterfly Exhibition<br>#미리보는 나비정원</dd>
+        </dl>
+        </a></li>
+    
+    <li class="whapic3"><a href="#">
+    	<dl>
+        <dt><img src="images/dancing.png" alt="광장"></dt>
+        <dd>흥부자쌤들의 퍼포먼스<br>#에버랜드 스쿨어택</dd>
+        </dl>
+        </a></li>
+    
+    <li class="whapic4"><a href="#">
+    	<dl>
+        <dt><img src="images/show.png" alt="오픈스테이지"></dt>
+	    <dd>광장나눔 프로젝트<br>#에버랜드 오픈 스테이지</dd>
+        </dl>
+        </a></li>
+    </ul>
+</div>
+
+
+<div id="recommend_bg">
+<div id="recommend">
+<h2>추천코스</h2>
+<p>에버랜드가 더 즐거워지는 꿀팁!</p>
+
+<ul>
+<li class="recopic1"><a href="#">
+<dl>
+<dt><img src="images/snowman1.png" alt="눈사람"></dt>
+<dd>버라이어티한 겨울!<br>#Winter snow park</dd>
+</dl>
+</a></li>
+
+<li class="recopic2"><a href="#">
+<dl>
+<dt><img src="images/food1.png" alt="음식"></dt>
+<dd>추운겨울에 만날 수 있는<br>#Winter Special Menu</dd>
+</dl>
+</a></li>
+
+<li class="recopic3"><a href="#">
+<dl>
+<dt><img src="images/butterfly2.png" alt="나비"></dt>
+<dd>또 다시 만난 봄과 나비 이야기<br>#에버랜드 미리봄 나비정원</dd>
+</dl>
+</a></li>
+
+
+<li class="recopic4"><a href="#">
+<dl>
+<dt><img src="images/fire.png" alt="불꽃놀이"></dt>
+<dd>전지적하늘 시점에서 바라본<br>#에버랜드의 화려한 야경</dd>
+</dl>
+</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="information">
+<h2>Information</h2>
+<p>에버랜드가 더 알아보기!</p>
+<ul>
+
+<li class="infopic1"><a href="#">
+<dl>
+<dt><img src="images/ticket.png" alt="이용권"></dt>
+<dd>이용권</dd>
+</dl>
+</a></li>
+
+<li class="infopic2"><a href="#">
+<dl>
+<dt><img src="images/annual.png" alt="이용권"></dt>
+<dd>연간이용권</dd>
+</dl>
+</a></li>
+
+<li class="infopic3"><a href="#">
+<dl>
+<dt><img src="images/restaurant.png" alt="레스토랑"></dt>
+<dd>레스토랑 / 테라스</dd>
+</dl>
+</a></li>
+
+<li class="infopic4"><a href="#">
+<dl>
+<dt><img src="images/experience.png" alt="체험프로그램"></dt>
+<dd>체험 프로그램</dd>
+</dl>
+</a></li>
+
+<li class="infopic5"><a href="#">
+<dl>
+<dt><img src="images/special.png" alt="스페셜패키지"></dt>
+<dd>스페셜 패키지</dd>
+</dl>
+</a></li>
+</ul>
+</div>
+
+
+
+<div id="footer">
+  <div class="footer_inner">
+    <ul class="foot_link">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">보안신고</a></li>
+        <li><a href="#">이메일주소</a></li>
+        <li><a href="#">무단수집거부</a></li>
+        <li><a href="#">채용캐스트참여</a></li>
+        <li><a href="#">사이트맵</a></li>
+    </ul>
+
+        <p class="address">경기도 용인시 처인수 포곡읍 에버랜드 199 삼성물산(주)ㅣ 통신판매업 신고번호 : 제2006-용인처인-0216호<br>
+        Copyright ⓒ 1996~2017 Samsung C&amp;T Corporation. All rights reserved.</p>
+        <p class="call">상담센터 : 031-320-5000(유료)</p>    
+     </div>
+</div> 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
