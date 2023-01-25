@@ -111,6 +111,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header,
 .fh5co-cover {
   background-color: transparent;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -346,6 +347,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 90%;
   float: left;
 }
+
 @media screen and (max-width: 768px) {
   .info {
     margin-bottom: 3em;
@@ -559,7 +561,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #e30000;
+  
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -1437,3 +1439,93 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+.textwritter {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+ 
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url(images/night.png););
+}
+
+.wrapper {
+  height: 70px;
+}
+
+h1 {
+  line-height: 70px;
+  text-shadow: 10px 10px 4px #3434;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.text--static {
+	color: #fff;
+  margin-right: 10px;
+}
+
+.text--dynamic {
+	color: #fff;
+	font-weight: bold;
+  position: relative;
+}
+
+.text--dynamic::after {
+  content: "";
+  position: absolute;
+  margin-left: 5px;
+  width: 2px;
+  height: 100%;
+  animation: blink 300ms ease infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
