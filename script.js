@@ -1,4 +1,4 @@
-const wordsArray = ["분석하는 디자이너 황다교입니다.", "설계하는 디자이너 황다교입니다.", "창의적인 생각을 좋아하는 디자이너 황다교입니다.", "발전하는 디자이너 황다교입니다."];
+const wordsArray = ["분석하는 디자이너 황다교입니다.", "유저의 입장에서 생각하는 디자이너 황다교입니다.", "창의적인 생각을 좋아하는 디자이너 황다교입니다.", "발전하는 디자이너 황다교입니다."];
 let dynamicElement = document.querySelector(".text--dynamic");
 let currentWord = "",
   currentLetter = "",

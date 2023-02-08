@@ -1310,136 +1310,6 @@ input[type="text"] {
 
 
 
-/* caro {height: 600px;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  align-items: center;
-  justify-items: center;}
-  
-  
-  #radio {
-  margin-top: -1px;
-  vertical-align: middle;
-}
-  
-  
-  
-  
-  main#carousel {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  --items: 5;
-  --middle: 3;
-  --position: 1;
-  pointer-events: none;
-}
-
-div.item {
-  position: absolute;
-  width: 300px;
-  height: 400px;
-  background-color: coral;
-  --r: calc(var(--position) - var(--offset));
-  --abs: max(calc(var(--r) * -1), var(--r));
-  transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
-}
-
-div.item:nth-of-type(1) {
-  --offset: 1;
-  background-color: #90f1ef;
-}
-div.item:nth-of-type(2) {
-  --offset: 2;
-  background-color: #ff70a6;
-}
-div.item:nth-of-type(3) {
-  --offset: 3;
-  background-color: #ff9770;
-}
-div.item:nth-of-type(4) {
-  --offset: 4;
-  background-color: #ffd670;
-}
-div.item:nth-of-type(5) {
-  --offset: 5;
-  background-color: #e9ff70;
-}
-
-input:nth-of-type(1) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel {
-  --position: 1;
-}
-
-input:nth-of-type(2) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel {
-  --position: 2;
-}
-
-input:nth-of-type(3) {
-  grid-column: 4 /5;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel {
-  --position: 3;
-}
-
-input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel {
-  --position: 4;
-}
-
-input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel {
-  --position: 5;
-}   */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=style.css.map */
-
 
 
 
@@ -1508,6 +1378,95 @@ h1 {
     background-color: white;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#circle { position: relative; margin-left:800px; margin-top:-100px; margin-bottom:-20px; padding-bottom: 25%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 12.7px; font-weight: bold; opacity: 40%;}
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 440px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+
+
+
+
+
+ul.langbutton{
+  width:234px;
+  height: 64px;
+  opacity: 60%;
+  float: right;
+}
+
+ul.langbutton li{
+  list-style: none;
+  float:left;
+  display:block;
+  text-align: center;
+  width:58px;
+  height: 58px;
+}
+
+ul.catBlock li a{
+  display: block;
+  padding: 30px 10px 5px 10px;
+  height:60px;
+}
+
 
 
 
