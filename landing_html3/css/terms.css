@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+section {
+    width: 100%;
+    border: 0px solid red;
+    box-sizing: border-box;
+}
+
+
+#terms_head {
+    background-color: #F7F9FB;
+    height: 220px;
+    padding: 60px 0 0 0;
+
+}
+
+.ttl {
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.item {}
+
+
+.ttl_txt {}
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #3D3D3D;
+    font-weight: 800;
+    margin: 0 0 0 44px;
+    padding: 8px 0 0 0;
+
+
+}
+
+
+#terms_body {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #3D3D3D;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#terms_body span {
+    display: block;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+#terms_body b {
+    display: block;
+    font-weight: 700;
+    margin-top: 40px;
+}
